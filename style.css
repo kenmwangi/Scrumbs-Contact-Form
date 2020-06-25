@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+:root {
+  --color-primary: rgb(114, 155, 251);
+  --color-secondary: rgb(31, 35, 86);
+  --color-tertiary: rgb(34, 102, 211);
+  --color-tertiary-light: rgb(165, 216, 248);
+
+  --color-gray-light: #f2f2f9;
+  --color-gray-dark: #646680;
+
+  --linear-gradient: linear-gradient(to right bottom, #48c6ef 0%, #6f86d6 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: var(--linear-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  font-family: "Pangolin", cursive;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  background-color: var(--color-gray-light);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 2rem 5rem;
+  padding: 2rem;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list li {
+  list-style: none;
+  flex: 0 0 auto;
+  margin: 10px 0;
+}
+.nav-list li a {
+  font-family: "Pangolin", cursive;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: var(--color-gray-dark);
+}
+.nav-list li a:hover {
+  background: var(--linear-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-list li:nth-child(2) {
+  margin-right: auto;
+}
+.nav-list .logo {
+  color: var(--color-tertiary);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.nav-list .btn-access {
+  padding: 10px 5px;
+  color: #fff;
+}
+.btn {
+  font-family: "Pangolin", cursive;
+  background-image: linear-gradient(to right bottom, #48c6ef 0%, #6f86d6 100%);
+  color: #fff;
+  /* color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px; */
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.2rem 2rem;
+  width: 1050px;
+  height: 60vh;
+}
+.form > * {
+  margin-bottom: 15px;
+  color: var(--color-gray-dark);
+}
+.form h2 {
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+.form .btn {
+  color: #fff;
+  padding: 10px 15px;
+  width: 15rem;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  display: block;
+}
+.form-control input,
+textarea {
+  display: block;
+  width: 100%;
+}
+/* Footer */
+.footer-list {
+  display: flex;
+  flex: 0 0 auto;
+}
+.footer-list li a {
+  font-size: 1rem;
+  padding: 0 12px;
+  color: var(--color-gray-dark);
+}
+.footer-list li a:hover {
+  background: var(--linear-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-list li:nth-child(4) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-list li .powered-by {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  background: var(--linear-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: grayscale(20%);
+}
